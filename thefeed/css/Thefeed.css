@@ -1,0 +1,183 @@
+/* General Styles for Feed Page */
+
+.bodoni-moda-regular {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 600; /* Regular weight */
+  font-style: normal;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Adds a slight shadow to the text */
+}
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #ffb6c1, #f8f8f8); /* Soft pink to white gradient */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.1); /* Subtle inner shadow for depth */
+}
+
+/* Enable Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Back to Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #F85658;
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+  display: none; 
+}
+
+/* Hover Effect */
+#backToTop:hover {
+  background-color: #ff8c8c;
+  transform: scale(1.05);
+}
+
+/* Show Button When Scrolled */
+@media (min-width: 768px) {
+  #backToTop {
+      display: block;
+  }
+}
+
+header {
+    text-align: center;
+    background-image: url("../img/Zebra.png"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.4); 
+    color: white;
+    padding: 20px;
+    border-bottom: 5px solid #F85658; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+  
+  
+ 
+  h1 {
+    font-size: 2.5em;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color:  #333;
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 20px;
+    display: inline-block;
+    transition: color 0.3s ease-in-out, transform 0.3s ease;
+  }
+
+  
+a:hover {
+  color:  #F85658; /* Soft color change */
+}
+
+  
+  /* Image Feed Styles */
+  .image-feed {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    max-width: 90%;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.image-item {
+  width: 30%;
+  margin: 15px;
+  text-align: center;
+  background: rgba(255, 182, 193, 0.2); /* Light pink overlay */
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+ 
+/* Image Styling */
+.image-item img {
+  width: 100%;
+  height: auto; /* Maintains aspect ratio */
+  max-height: 500px;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+/* Hover Effects */
+.image-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Text Styles */
+p {
+  font-size: 1 em;
+  color: #666;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+/* Styling for Captions */
+figcaption {
+  font-size: 1em; /* Smaller font size for caption */
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Styling for Descriptions */
+.image-item p {
+  font-size: 0.9em; /* Smaller font size for description */
+  color: #666;
+  margin-top: 10px;
+  padding: 0 10px;
+  text-align: center;
+}
+/* Adjust video size to match image items */
+.responsive-video {
+  width: 100%; /* Make the video fill its container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 500px; /* Limit maximum width */
+  border-radius: 8px; /* Optional: rounded corners for the video */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional: shadow for a subtle effect */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover */
+}
+
+/* Hover effect for video */
+.responsive-video:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}

@@ -16,7 +16,7 @@ body {
   font-style: normal;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom right, #ffb6c1, #f8f8f8); /* Soft pink to white gradient */
+  background: linear-gradient(to bottom right, #ff93a3, #f8f8f8); /* Soft pink to white gradient */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,11 +115,21 @@ a:hover {
   width: 30%;
   margin: 15px;
   text-align: center;
-  background: rgba(255, 182, 193, 0.2); /* Light pink overlay */
+  background: rgba(0, 0, 0, 0.8); /* Dark background color */
   padding: 15px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Ensure text inside the box is readable */
+.image-item p, .image-item figcaption {
+  color: #fff; /* White text for contrast */
+}
+
+/* If there's additional text under the caption */
+.image-item p {
+  color: rgba(255, 255, 255, 0.8); /* Light white for softer effect */
 }
  
 /* Image Styling */
@@ -133,15 +143,8 @@ a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
-/* Hover Effects */
-.image-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
-}
 
-img:hover {
-  transform: scale(1.05);
-}
+
 
 /* Text Styles */
 p {
@@ -155,14 +158,14 @@ p {
 figcaption {
   font-size: 1em; /* Smaller font size for caption */
   font-weight: 600;
-  color: #333;
+  color: #f6c7c7;
   margin-top: 10px;
 }
 
 /* Styling for Descriptions */
 .image-item p {
   font-size: 0.9em; /* Smaller font size for description */
-  color: #666;
+  color: #ffdddd;
   margin-top: 10px;
   padding: 0 10px;
   text-align: center;

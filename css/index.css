@@ -9,43 +9,45 @@ body {
     flex-direction: column;
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
-    height: 100vh; /* Full viewport height */
-    margin: 0; /* Remove default margin */
+    height: 100vh; 
+    margin: 0; 
     font-family: "Montserrat", sans-serif;
-    font-weight: 300; /* Thinner weight */
+    font-weight: 300; 
 }
 
 a {
-    color: black;
+    color: rgb(35, 35, 35);
     text-decoration: none;
+    transition: color 0.6s ease-in-out, transform 0.6s ease; 
 }
 a:hover {
     color: #F85658;
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    transform: scale(1.05); 
 }
 
 .montserrat-regular {
     font-family: "Montserrat", sans-serif;
-    color: black;
+    color:rgb(35, 35, 35);
     font-optical-sizing: auto;
-    font-weight: 400; /* Lighter font weight */
+    font-weight: 300; /* Lighter font weight */
     font-style: normal;
 }
 
 header {
     text-align: center;
-    padding: 20px; /* Adjusted for a sleeker look */
+    padding: 10px 40px; 
     background-color: rgba(255, 255, 255, 0.5); /* Softer transparency */
-    border-bottom: 2.5px solid pink; /* Thinner accent border */
-    border-top: 2.5px solid pink; /* Thinner accent border */
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    border-bottom: 2.5px solid pink; 
+    border-top: 2.5px solid pink; 
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15); 
     width: 100%;
     backdrop-filter: blur(4px); /* Subtle background blur */
+    
 }
 
 h1 {
     font-size: 2.2em; /* Slightly reduced for balance */
-    text-transform: uppercase;
+    text-transform: none;
     letter-spacing: 1.5px;
     font-weight: bold;
     color: #F85658; /* Accent color for h1 */
